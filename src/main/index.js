@@ -3,7 +3,7 @@
 const { parseParaMarkdown } = require('./services/parse');
 
 /**
- * @typedef {'PARSE' | 'PII' | 'CHUNKING' | 'EMBEDDING' | 'VECTOR_DB' | 'LLM_EMBEDDINGS' | 'VECTOR_RETRIEVER' | 'RE_RANKER' | 'LLM_RETRIEVAL' | 'LLM_CONTEXT'} PassoRAG
+ * @typedef {'PARSE' | 'PII' | 'CHUNKING' | 'EMBEDDING' | 'VECTOR_DB' | 'LLM_EMBEDDINGS' | 'VECTOR_RETRIEVER' | 'RE_RANKER' | 'LLM_CONTEXT'} PassoRAG
  */
 
 /**
@@ -38,9 +38,6 @@ async function orquestradorDebug(testeSet) {
             break;
         case 'RE_RANKER':
             console.log(' teste re ranker');
-            break;
-        case 'LLM_RETRIEVAL':
-            console.log(' teste llm retrieval');
             break;
         case 'LLM_CONTEXT':
             console.log(' teste llm context');
