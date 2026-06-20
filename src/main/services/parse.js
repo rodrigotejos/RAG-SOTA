@@ -5,6 +5,7 @@
 require('dotenv').config();
 
 const { LlamaCloud } = require('@llamaindex/llama-cloud');
+const { salvarArquivo } = require('./fileSave');
 
 const fs = require('fs'); // Usado para criar a stream de leitura do arquivo
 const fsPromises = require('fs/promises');
@@ -45,6 +46,8 @@ async function parseParaMarkdown(caminhoDocumento) {
         .join('\n\n') || "";
 
     console.log(markdownCompleto);
+
+    salvarArquivo(markdownCompleto, 'markdown.md');
     return markdownCompleto;
 
 }
