@@ -1,0 +1,16 @@
+{
+    "name": "rag-sota",
+    "version": "1.0.0",
+    "description": "App Node.js preparado para Electron",
+    "main": "src/main/index.js",
+    "scripts": {
+        "start": "node src/main/index.js",
+        "dev": "node --watch src/main/index.js"
+    },
+    "dependencies": {
+        "@llamaindex/llama-cloud": "^2.9.0",
+        "dotenv": "^17.4.2",
+        "franc-min": "^6.2.0",
+        "llamaindex": "^0.12.1"
+    }
+}
